@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bayramın Yeri Pub — Zaqatala</title>
+  <meta name="description" content="Bayramın Yeri Pub — Zaqatala Danaçı massivi. İçkilər, məzələr və isti yeməklər. Əlaqə: 050 761 66 60" />
+  <style>
+    :root{
+      --bg:#f7f5f2;
+      --accent:#8b3e2f;
+      --muted:#6b6b6b;
+      --card:#ffffff;
+      --shadow: 0 6px 18px rgba(0,0,0,0.08);
+      --radius:12px;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, "Helvetica Neue", Arial, sans-serif;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:var(--maxw);margin:24px auto;padding:0 18px;}
+    header{
+      background:linear-gradient(90deg,var(--accent),#b85a45);
+      color:#fff;padding:28px;border-radius:16px;
+      box-shadow:var(--shadow);
+    }
+    header h1{margin:0;font-size:28px;letter-spacing:0.4px}
+    header p{margin:6px 0 0;color:rgba(255,255,255,0.92)}
+    .topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-top:14px;flex-wrap:wrap}
+    .contact{background:rgba(255,255,255,0.08);padding:8px 12px;border-radius:10px;font-weight:600}
+    nav{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+    nav a{background:var(--card);padding:10px 14px;border-radius:10px;text-decoration:none;color:var(--accent);font-weight:600;box-shadow:var(--shadow)}
+    main{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+    @media(max-width:900px){main{grid-template-columns:1fr}}
+    .card{background:var(--card);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .hero{display:flex;gap:18px;align-items:center}
+    .hero img{width:160px;height:120px;object-fit:cover;border-radius:10px}
+    h2{margin-top:0}
+    .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    @media(max-width:700px){.menu-grid{grid-template-columns:1fr}}
+    .menu-item{padding:12px;border-radius:10px;border:1px solid #eee;background:linear-gradient(180deg,#fff,#fbfbfb)}
+    .price{font-weight:700;color:var(--accent)}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+    .map{height:200px;background:#e9e6e2;border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:14px}
+    .hours{display:flex;flex-direction:column;gap:6px}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#f0e9e6;padding:6px 10px;border-radius:999px;font-weight:600;color:#6b4a3f}
+    .socials{display:flex;gap:8px}
+    .btn{display:inline-block;padding:10px 14px;background:var(--accent);color:#fff;border-radius:10px;text-decoration:none;font-weight:700}
+    .menu-table{width:100%;border-collapse:collapse}
+    .menu-table th,.menu-table td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+    .note{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Bayramın Yeri Pub</h1>
+      <div class="topbar">
+        <p>📍 Zaqatala, Danaçı massivi — rahat məkan, yerli və qonaq zövqünə uyğun menyu</p>
+        <div class="contact">📞 **050 761 66 60**</div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#haqqinda">Haqqında</a>
+      <a href="#menu">Menyu</a>
+      <a href="#galereya">Qalereya</a>
+      <a href="#elaqe">Əlaqə</a>
+    </nav>
+
+    <main>
+      <section>
+        <div class="card hero" id="haqqinda">
+          <img src="images/pub-exterior.jpg" alt="Bayramın Yeri Pub" />
+          <div>
+            <h2>Bayramın Yeri</h2>
+            <p class="note">Danaçı massivi, Zaqatala — ailəvi və dostlarla görüş üçün ideal pub. Sərin içkilər, zəngin məzə seçimi və isti yeməklər.</p>
+            <div style="margin-top:10px" class="tags">
+              <span class="tag">Canlı musiqi</span>
+              <span class="tag">Açıq hava</span>
+              <span class="tag">Ailə dostu</span>
+            </div>
+            <p style="margin-top:12px" class="note"><strong>İş saatları:</strong> Hər gün 12:00 — 00:00</p>
+          </div>
+        </div>
+
+        <div class="card" id="menu" style="margin-top:16px">
+          <div class="section-title">
+            <h2>Menyu</h2>
+            <a class="btn" href="#elaqe">Rezervasiya</a>
+          </div>
+
+          <h3>İçkilər</h3>
+          <table class="menu-table" aria-label="İçkilər">
+            <thead>
+              <tr><th>Ad</th><th>Həcmi</th><th>Qiymət</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Əl işi pivə (lokal)</td><td>500 ml</td><td class="price">6.50 AZN</td></tr>
+              <tr><td>Qara pivə (import)</td><td>330 ml</td><td class="price">7.00 AZN</td></tr>
+              <tr><td>Qırmızı şərab (stəkanda)</td><td>150 ml</td><td class="price">5.50 AZN</td></tr>
+              <tr><td>Ağ şərab (stəkanda)</td><td>150 ml</td><td class="price">5.50 AZN</td></tr>
+              <tr><td>Mojito</td><td>400 ml</td><td class="price">8.00 AZN</td></tr>
+              <tr><td>Qəhvə (espresso)</td><td>60 ml</td><td class="price">2.50 AZN</td></tr>
+            </tbody>
+          </table>
+
+          <h3 style="margin-top:12px">Məzələr</h3>
+          <div class="menu-grid" role="list">
+            <div class="menu-item">
+              <strong>Qarışıq meze tabağı</strong>
+              <p class="note">Ev yapımı humus, badımcan salatı, pendir</p>
+              <div class="price">12.00 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Qızardılmış pendir</strong>
+              <p class="note">Bal ilə servis</p>
+              <div class="price">7.50 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Dolma (6 ədəd)</strong>
+              <p class="note">Ənənəvi dad</p>
+              <div class="price">9.00 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Qızardılmış kalamar</strong>
+              <p class="note">Limon və sarımsaq sousu</p>
+              <div class="price">11.00 AZN</div>
+            </div>
+          </div>
+
+          <h3 style="margin-top:12px">İsti yeməklər</h3>
+          <div class="menu-grid" role="list">
+            <div class="menu-item">
+              <strong>Qril toyuq</strong>
+              <p class="note">Kartof və tərəvəz ilə</p>
+              <div class="price">14.00 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Ətli plov (pay)</strong>
+              <p class="note">Ənənəvi resept</p>
+              <div class="price">13.50 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Balıq tava</strong>
+              <p class="note">Sezon balığı, limon</p>
+              <div class="price">16.00 AZN</div>
+            </div>
+            <div class="menu-item">
+              <strong>Vegetarian lazanya</strong>
+              <p class="note">Ev sousu ilə</p>
+              <div class="price">12.50 AZN</div>
+            </div>
+          </div>
+
+          <p class="note" style="margin-top:12px">Qiymətlər təxmini və yerli bazara uyğun təyin olunub. Xüsusi sifarişlər üçün zəng edin.</p>
+        </div>
+
+        <div class="card" id="galereya" style="margin-top:16px">
+          <h2>Qalereya</h2>
+          <p class="note">Aşağıdakı şəkilləri öz şəkillərinizlə əvəz edin. Faylları `images/` qovluğuna yükləyin və `src` atributunu yeniləyin.</p>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px">
+            <div style="background:#fff;border-radius:8px;height:90px;display:flex;align-items:center;justify-content:center">Şəkil 1</div>
+            <div style="background:#fff;border-radius:8px;height:90px;display:flex;align-items:center;justify-content:center">Şəkil 2</div>
+            <div style="background:#fff;border-radius:8px;height:90px;display:flex;align-items:center;justify-content:center">Şəkil 3</div>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>Əlaqə</h3>
+          <p class="note"><strong>Ünvan:</strong> Zaqatala, Danaçı massivi</p>
+          <p class="note"><strong>Telefon:</strong> <a href="tel:+994507616660">050 761 66 60</a></p>
+          <div style="margin-top:10px">
+            <h4>Rezervasiya</h4>
+            <p class="note">Telefonla zəng edin və ya mesaj göndərin. Böyük qruplar üçün əvvəlcədən rezervasiya məsləhətdir.</p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Xüsusi təklif</h4>
+          <p class="note">Hər həftəsonu canlı musiqi və 20% endirimli məzə tabağı (səhifədə elan olunacaq).</p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Xəritə</h4>
+          <div class="map">Buraya Google/Mapbox xəritə iframe əlavə edin</div>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; <strong>Bayramın Yeri</strong> — Zaqatala Danaçı massivi • Əlaqə: 050 761 66 60</p>
+    </footer>
+  </div>
+</body>
+</html>
